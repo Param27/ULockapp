@@ -1,0 +1,7 @@
+syntax: glob
+re:^\.gradle/
+re:^\.idea/
+re:^app/build/
+re:^local\.properties$
+re:^build/
+re:^facebook/build/

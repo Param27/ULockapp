@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.ULock"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 11
+        versionName "3.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.google.android.gms:play-services-ads:9.2.1'
+    compile 'me.zhanghai.android.patternlock:library:2.0.2'
+    compile 'com.android.support:preference-v7:24.1.1'
+    compile 'com.android.support:preference-v14:24.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.github.traex.rippleeffect:library:1.3'
+    compile 'nl.dionsegijn:pixelate:1.0.2'
+    compile 'tyrantgit:explosionfield:1.0.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+}

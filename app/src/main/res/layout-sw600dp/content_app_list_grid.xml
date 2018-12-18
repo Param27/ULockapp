@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ULock.AppListActivity"
+    tools:showIn="@layout/activity_app_list_grid"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/ll_three_apps"
+    android:background="@color/add_apps_back">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/ist_app"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/initial"
+        android:tag="istPic"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+    <ImageView
+        android:id="@+id/second_app"
+        android:layout_margin="10dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:tag="secondPic"
+        android:src="@drawable/initial"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/third_app"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:tag="thirdPic"
+        android:scaleType="fitXY"
+        android:src="@drawable/initial"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+</LinearLayout>
+</LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/gridView" />
+
+
+</LinearLayout>

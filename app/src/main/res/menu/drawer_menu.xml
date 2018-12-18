@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:checked="true"
+            android:id="@+id/drawer_how"
+            android:icon="@drawable/change_lock"
+            android:title="How to use app"/>
+        <item
+            android:id="@+id/drawer_chngP"
+            android:icon="@drawable/cookies"
+            android:title="Change Password Type"/>
+
+
+        <item
+            android:id="@+id/drawer_premium"
+            android:title="Go Premium"
+            android:icon="@drawable/go_pro">
+        </item>
+        <item
+            android:id="@+id/drawer_share"
+            android:title="Share App"
+            android:icon="@drawable/work">
+        </item>
+
+</group>
+
+</menu>

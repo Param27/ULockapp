@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PinLockActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_passlock">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"></LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="abc"
+        android:id="@+id/adView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_lock"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Enter Password"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Please Enter the Password"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box"
+        android:id="@+id/editText"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="1"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <com.andexert.library.RippleView
+            android:id="@+id/ripple"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+
+            android:layout_weight="1"
+            rv_centered="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="22sp"
+                android:drawablePadding="10dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/cross"
+                android:textAllCaps="false"
+                android:id="@+id/button_cancel" /></LinearLayout>
+        </com.andexert.library.RippleView>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@android:color/darker_gray"/>
+        <com.andexert.library.RippleView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_weight="1"
+            rv_centered="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textColor="@color/disabled_color"
+                android:enabled="false"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_black"
+                android:background="@android:color/transparent"
+                android:id="@+id/button_continue" /></LinearLayout>
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView
+            android:id="@+id/confrm"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:visibility="gone"
+            android:layout_weight="1"
+            rv_centered="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:drawableRight="@drawable/navigatenext"
+                android:enabled="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:id="@+id/button_confirm" /></LinearLayout>
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

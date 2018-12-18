@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <com.ULock.view.SplashView
+        xmlns:app="http://schemas.android.com/apk/res/com.ULock"
+        android:id="@+id/splash_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:duration="1000"
+        app:removeFromParentOnEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/ulock"
+        />
+
+</LinearLayout>
